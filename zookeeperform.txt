@@ -1,0 +1,179 @@
+---------------------------------------------------------------ZooKeeperForm.html----------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ZookeeperForm</title>
+</head>
+<style>
+.centre {
+	width: 500px;
+	border: 15px solid green;
+	padding: 50px;
+	margin-left: 350px;
+}
+
+#heading {
+	margin-top: -30px;
+	line-height: 10px;
+	padding-bottom: 5px;
+}
+
+b {
+	color: red;
+}
+
+legend {
+	font-size: 1.1em;
+	font-weight: bold;
+	position: relative;
+	top: .1em;
+}
+
+.field1, .field2, .field3 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.in input {
+	width: 110%;
+	margin-left: 80px;
+}
+
+.in2 input, select, textarea {
+	width: 120%;
+	margin-left: 56px;
+}
+
+.checkboxes {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	text-align: centre;
+	padding: 5px;
+	margin-bottom: -25px;
+}
+
+button {
+	border: 2px solid black;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 10px;
+}
+</style>
+
+<body>
+	<form id=zoo action="submited.html" method=post>
+		<div class="centre">
+			<div id=heading>
+				<h1>Zoo Keeper Application Form</h1>
+
+				<h5>
+					<i>Please complete the form. Mandatory fields are marked with a
+						<b>*</b>
+					</i>
+				</h5>
+			</div>
+			<div class="main">
+
+				<fieldset class="field1">
+					<legend>CONTACT DETAILS</legend>
+					<div class="in">
+						<table>
+							<tr>
+								<td><label for=name>Name<b>*</b></label></td>
+								<td><input id=name name=name type=text
+									placeholder="First and Last Name" required autofocus></td>
+							</tr>
+							<tr>
+								<td><label for=Talephone>Telephone</label></td>
+								<td><input id=Telephone name=Telephone type=tel
+									placeholder="Eg. 22 1234 5678 "></td>
+							</tr>
+							<tr>
+								<td><label for=email>Email<b>*</b></label></td>
+								<td><input id=email name=email type=email
+									placeholder="example@gmail.com" required></td>
+							</tr>
+						</table>
+					</div>
+				</fieldset>
+				<fieldset class="field2">
+					<legend>PERSONAL INFORMATION</legend>
+					<div class="in2">
+						<table>
+							<tr>
+								<td><label for=age>Age<b>*</b></label></td>
+								<td><input id=age type=text required></td>
+							</tr>
+							<tr>
+								<td><label for="gender">Gender</label></td>
+								<td><select name="gender">
+										<option value="none" selected>Gender</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
+										<option value="other">other</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td><label>When did you<br> first know you<br>
+										wanted to be a<br> zoo-keeper?
+								</label></td>
+								<td><textarea rows=4></textarea></td>
+							</tr>
+						</table>
+					</div>
+
+				</fieldset>
+				<fieldset class="field3">
+					<legend>PICK YOUR FAVORITE ANIMALS</legend>
+					<div class="checkboxes">
+						<span> <input type="checkbox" id="Zebra" value="Zebra" />
+							<label for="Zebra">Zebra</label>
+						</span> <span> <input type="checkbox" id="cat" value="cat" /> <label
+							for="cat">Cat</label>
+						</span> <span> <input type="checkbox" id="Anaconda"
+							value="Anaconda" /> <label for="Anaconda">Anaconda</label>
+						</span> <span> <input type="checkbox" id="Human" value="Human" />
+							<label for="Human">Human</label>
+						</span> <span> <input type="checkbox" id="Elephant"
+							value="Elephant" /> <label for="Elephant">Elephant</label>
+						</span> <span> <input type="checkbox" id="Wildebeest"
+							value="Wildebeest" /> <label for="Wildebeest">Wildebeest</label>
+						</span> <span> <input type="checkbox" id="Pigeon" value="Pigeon" />
+							<label for="Pigeon">Pigeon</label></span> <span> <input
+							type="checkbox" id="Crab" value="Crab" /> <label for="Crab">Crab</label>
+
+						</span>
+					</div>
+				</fieldset>
+
+
+				<button type=submit>Submit Application</button>
+
+			</div>
+		</div>
+
+	</form>
+
+
+</body>
+</html>
+------------------------------------------------------submited.html----------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ZooKeeper submit</title>
+</head>
+<body>
+<h1>Your Form Submitted!!!</h1>
+</body>
+</html>
+
+-------------------------------------------------open with chrome it will be fit acurtely & look awesome -------------------------------------------------------------
